@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        $if(noindex)$
+        <meta name="robots" content="noindex">
+        $endif$
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        $if(canonical)$
+        <link rel="canonical" href="$canonical$" />
+        $else$
+        <link rel="canonical" href="$root$$url$" />
+        $endif$
+
+        $if(homepage)$
+        <title>Khalid's blog</title>
+        $else$
+        <title>$title$ - Khalid's blog</title>
+        $endif$
+
+        $if(meta_description)$
+        <meta name="description" content="$meta_description$" />
+        $endif$
+
+        <link rel="stylesheet" href="/css/default.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,700&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/2f54fe6e45.js" async></script>
+    </head>
+    <body>
+        <header class="logo">
+             <div class="logo-container">
+             <a href="/" aria-label="notmyspace.io">
+                 <div class="logo-content" />
+             </a>
+             </div>
+        </header>
+        <header class="blog-title">
+            <div class="blog-title-container">
+                <a href="/">Khalid Aleem's blog</a>
+                <div class="byline">"The mind is so complex when you're based, 32 levels. Welcome to my world" - Lil B </div>
+            </div>
+        </header>
+
+        <nav>
+            <div class="sidebar-container" >
+                <a class="" href="/">Home</a>
+                <a href="#about">About</a>
+                <a href="/archive.html">Archive</a>
+            </div>
+        </nav>
+
+        <main role="main">
+            <div class="main-container">
+                $body$
+            </div>
+        </main>
+
+        <footer id="about">
+            <section class="footer-box" >
+                $partial("about/about.html")$
+            </section>
+            <section class="footer-box" >
+                $partial("about/contact.html")$
+            </section>
+            <section class="footer-box">
+                $partial("about/this-site.html")$
+            </section>
+        </footer>
+    </body>
+</html>
