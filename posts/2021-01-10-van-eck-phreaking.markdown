@@ -584,7 +584,8 @@ obtain any information about the color of the pixels.
 Moreover, since sufficient accuracy can be obtained from the signal for
 that of a single frame, it should in principle be possible to eavesdrop
 on a display in real-time. This can be done by feeding the antenna
-output, for the most appropriate center frequency, into an FPGA.
+output, for the most appropriate center frequency, into an FPGA with a 
+custom hardware pipeline to process the data in real-time.
 
 Appropriately encrypted data has a uniform probability
 distribution, and will therefore resemble noise. As such, an attack of
