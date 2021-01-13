@@ -19,7 +19,7 @@ main =
                             , constField "root" root
                             , defaultContext ]
      hakyll $ do
-       match "images/*" $ do
+       match "images/**" $ do
          route   idRoute
          compile copyFileCompiler
 
