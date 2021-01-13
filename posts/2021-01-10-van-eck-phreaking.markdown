@@ -111,9 +111,9 @@ blanking interval.\
 As the current in the HDMI cable fluctuates, radiation is emitted. The
 frequency of radiation emitted is the same as that of the periodic
 fluctuation, and the amplitude is proportional to that of the amplitude
-of current fluctuation. Thus, we will observe greater signal strengths
-corresponding to pixels with a higher average RGB value. This is crucial
-for image reconstruction.
+of current fluctuation. We may therefore infer, to some degree, the intensity
+of a pixel by its associated emissions from the wire.
+This is crucial for image reconstruction.
 
 ## Setup
 

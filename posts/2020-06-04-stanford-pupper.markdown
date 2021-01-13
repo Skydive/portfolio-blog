@@ -1,10 +1,11 @@
 ---
-title: The Stanford Pupper
+title: A quadrapedal remote-controlled robot-dog
 tags: robotics
 ---
 
 This is a build log for the [Stanford Pupper](https://stanfordstudentrobotics.org/pupper), an open-sourced quadrupedal
-robot. Perhaps it would also make a sufficiently good pet dog.
+robot. Perhaps it would also make a sufficiently good pet dog. Once built, I hope to hook up a camera, and allow it to 
+be controlled from a web UI.
 
 See below for a brief introduction:
 
@@ -18,9 +19,8 @@ picture-in-picture" allowfullscreen> </iframe></div>
 <!--more-->
 <br>
 
-## Introduction
-
 ## Sourcing the parts
+
 
 ## Leg Assembly
 
